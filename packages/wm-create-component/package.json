@@ -1,0 +1,35 @@
+{
+  "name": "wm-create-component",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "IamHuadong <1761339618@qq.com>",
+  "homepage": "https://github.com/hwadn/website-maker-devtools#readme",
+  "license": "ISC",
+  "main": "./dist/index.js",
+  "directories": {
+    "src": "src",
+  },
+	"bin": {
+	  "create-wm-component": "./dist/index.js"
+	},
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "registry": "http://mirrors.cloud.tencent.com/npm/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hwadn/website-maker-devtools.git"
+  },
+  "scripts": {
+		"build": "tsc",
+    "test": "node ./__tests__/wm-create-component.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/hwadn/website-maker-devtools/issues"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
