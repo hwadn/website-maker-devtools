@@ -1,3 +1,7 @@
 #!/usr/bin/env node
+import { program } from 'commander'
+import pjson from '../package.json'
 
-console.log('chd hello')
+program.usage('<command>')
+program.version(pjson.version, '-v, --version')
+program.parse()

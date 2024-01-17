@@ -1,5 +1,5 @@
 {
-  "name": "wm-create-component",
+  "name": "@chd1994/wm-create-component",
   "version": "1.0.0",
   "description": "> TODO: description",
   "author": "IamHuadong <1761339618@qq.com>",
@@ -7,11 +7,11 @@
   "license": "ISC",
   "main": "./dist/index.js",
   "directories": {
-    "src": "src",
+    "src": "src"
   },
-	"bin": {
-	  "create-wm-component": "./dist/index.js"
-	},
+  "bin": {
+    "wm-create-component": "./dist/index.js"
+  },
   "files": [
     "src"
   ],
@@ -23,7 +23,7 @@
     "url": "git+https://github.com/hwadn/website-maker-devtools.git"
   },
   "scripts": {
-		"build": "tsc",
+    "build": "tsc",
     "test": "node ./__tests__/wm-create-component.test.js"
   },
   "bugs": {
@@ -31,5 +31,8 @@
   },
   "devDependencies": {
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "commander": "^11.1.0"
   }
 }
