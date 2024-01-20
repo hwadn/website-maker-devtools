@@ -1,7 +1,7 @@
 {
   "name": "@chd1994/wm-create-component",
   "version": "1.0.0",
-  "description": "> TODO: description",
+  "description": "a scaffold for creating wm component",
   "author": "IamHuadong <1761339618@qq.com>",
   "homepage": "https://github.com/hwadn/website-maker-devtools#readme",
   "license": "ISC",
@@ -30,9 +30,12 @@
     "url": "https://github.com/hwadn/website-maker-devtools/issues"
   },
   "devDependencies": {
+    "@types/inquirer": "^9.0.7",
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "commander": "^11.1.0"
+    "commander": "^11.1.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "6.5.0"
   }
 }
