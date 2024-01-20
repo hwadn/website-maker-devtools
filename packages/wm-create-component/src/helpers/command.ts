@@ -1,5 +1,5 @@
 import { program } from 'commander'
-import pjson from '../package.json'
+import pjson from '../../package.json'
 
 export function initCommand() {
 	program.usage('<command>')
