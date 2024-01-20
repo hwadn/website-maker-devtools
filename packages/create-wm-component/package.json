@@ -1,7 +1,7 @@
 {
-  "name": "@chd1994/wm-create-component",
-  "version": "1.0.0",
-  "description": "> TODO: description",
+  "name": "@chd1994/create-wm-component",
+  "version": "1.0.2",
+  "description": "a scaffold for creating wm component",
   "author": "IamHuadong <1761339618@qq.com>",
   "homepage": "https://github.com/hwadn/website-maker-devtools#readme",
   "license": "ISC",
@@ -10,29 +10,34 @@
     "src": "src"
   },
   "bin": {
-    "wm-create-component": "./dist/index.js"
+    "create-wm-component": "./dist/index.js"
   },
   "files": [
-    "src"
+    "dist"
   ],
   "publishConfig": {
-    "registry": "http://mirrors.cloud.tencent.com/npm/"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hwadn/website-maker-devtools.git"
   },
   "scripts": {
-    "build": "tsc",
-    "test": "node ./__tests__/wm-create-component.test.js"
+    "build": "tsc"
   },
   "bugs": {
     "url": "https://github.com/hwadn/website-maker-devtools/issues"
   },
   "devDependencies": {
+    "@types/inquirer": "^9.0.7",
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "commander": "^11.1.0"
+    "chalk": "4.1.2",
+    "commander": "^11.1.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "6.5.0",
+    "ora": "5.4.0"
   }
 }

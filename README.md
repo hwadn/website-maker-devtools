@@ -1,0 +1,5 @@
+# Publish
+
+```sh
+lerna publish
+```
