@@ -13,7 +13,7 @@
     "wm-create-component": "./dist/index.js"
   },
   "files": [
-    "src"
+    "dist"
   ],
   "publishConfig": {
     "access": "public",
