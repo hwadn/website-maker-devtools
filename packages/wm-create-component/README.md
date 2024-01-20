@@ -2,10 +2,15 @@
 
 > TODO: description
 
-## Usage
+## Get Started
 
+``` sh
+yarn global add wm-create-component
+wm-create-component
 ```
-const wmCreateComponent = require('wm-create-component');
 
-// TODO: DEMONSTRATE API
+or
+
+``` sh
+npx wm-create-component
 ```
