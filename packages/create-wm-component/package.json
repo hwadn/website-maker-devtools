@@ -24,8 +24,7 @@
     "url": "git+https://github.com/hwadn/website-maker-devtools.git"
   },
   "scripts": {
-    "build": "tsc",
-    "test": "node ./__tests__/wm-create-component.test.js"
+    "build": "tsc"
   },
   "bugs": {
     "url": "https://github.com/hwadn/website-maker-devtools/issues"
