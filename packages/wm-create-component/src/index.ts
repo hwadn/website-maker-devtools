@@ -1,31 +1,25 @@
 #!/usr/bin/env node
-import { program } from 'commander'
-import inquirer from 'inquirer'
-import downloadGitRepo from 'download-git-repo'
 
-import pjson from '../package.json'
+import { initCommand } from './command'
+import { initQA } from './qa'
+import { downloadTemplate } from './download'
+import { modifyJson } from './modify-json'
 
-program.usage('<command>')
-program.version(pjson.version, '-v, --version')
-program.parse()
+async function main() {
+	initCommand()
+	const answers = await initQA()
 
-inquirer.prompt([
-	{
-			name: 'componentName',
-			message: 'your component name: '
-	},
-	{
-			name: 'description',
-			message: 'description: ',
-			default: 'a wm component'
-	}
-]).then(answers => {
-	// 拿到信息参数
-	const { componentName, description } = answers
-	const beginTime = new Date().getTime()
-	console.log('start: jjj')
-	downloadGitRepo('github:hwadn/wm-component-template', `./${componentName}`, (err: any) => {
+	if (answers) {
+		const beginTime = new Date().getTime()
+		const { targetFolder, componentName, description } = answers
+		console.log('creating...')
+		await downloadTemplate(targetFolder)
+		// replace package.json
+		const pJsonPath = `${targetFolder}/package.json`
+		await modifyJson(pJsonPath, { name: `@chd1994/${componentName}`, description })
 		const time = (new Date().getTime() - beginTime) / 1000
-    console.log(err || `create project finish in ${time}s`)
-	})
-})
+		console.log(`create project finish in ${time}s`)
+	}
+}
+
+main()
