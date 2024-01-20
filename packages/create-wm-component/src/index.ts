@@ -20,16 +20,15 @@ async function main() {
 		const createLoading = ora('creating...');
 		createLoading.start()
 		try {
-			const wmComponentFolder = `wm-${componentName}`
-			await downloadTemplate(wmComponentFolder)
+			await downloadTemplate(targetFolder)
 			// replace package.json
 			const pJsonPath = `${targetFolder}/package.json`
 			const author = await getYarnUserName()
-			const wmComponentName = `@chd1994/wm-${componentName}`
-			await modifyJson(pJsonPath, { name: wmComponentName, description, author })
+
+			await modifyJson(pJsonPath, { name: componentName, description, author })
 
 			const time = (new Date().getTime() - beginTime) / 1000
-			createLoading.succeed(`create wm component ${wmComponentName} finish in ${time}s`)
+			createLoading.succeed(`create wm component ${componentName} in ${time}s`)
 		} catch (err: any) {
 			createLoading.fail('create failed')
 			console.log(chalk.red(err?.stack))

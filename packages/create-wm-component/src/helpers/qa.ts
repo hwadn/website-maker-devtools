@@ -23,7 +23,7 @@ export async function initQA(): Promise<IAnswers | undefined> {
 	])
 
 	const componentName = answers.componentName.trim()
-	const targetFolder = `./${componentName}`
+	const targetFolder = `./wm-${componentName}`
 	const absoluteFolder = path.resolve(process.cwd(), targetFolder)
 	const isExist = fs.existsSync(absoluteFolder)
 	
@@ -39,6 +39,6 @@ export async function initQA(): Promise<IAnswers | undefined> {
 		if (!shouldOverwrite) return
 	}
 
-	return { componentName, description: answers.description.trim(), targetFolder: absoluteFolder }
+	return { componentName: `@chd1994/wm-${componentName}`, description: answers.description.trim(), targetFolder: absoluteFolder }
 }
 
