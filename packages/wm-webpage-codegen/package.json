@@ -1,0 +1,44 @@
+{
+  "name": "wm-webpage-codegen",
+  "version": "1.0.0",
+  "description": "Generate source code from wm webpage config",
+  "keywords": [
+    "codegen"
+  ],
+  "author": "IamHuadong <1761339618@qq.com>",
+  "homepage": "https://github.com/hwadn/website-maker-devtools#readme",
+  "license": "ISC",
+  "main": "./dist/index.js",
+  "directories": {
+    "src": "src"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hwadn/website-maker-devtools.git"
+  },
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs",
+    "test": "yarn build && node ./dist/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/hwadn/website-maker-devtools/issues"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "rollup": "^4.9.6",
+    "rollup-plugin-string": "^3.0.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.8"
+  }
+}
