@@ -1,5 +1,5 @@
 {
-  "name": "wm-webpage-codegen",
+  "name": "@chd1994/wm-webpage-codegen",
   "version": "1.0.0",
   "description": "Generate source code from wm webpage config",
   "keywords": [
@@ -39,6 +39,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "handlebars": "^4.7.8"
+    "handlebars": "^4.7.8",
+    "prettier": "3.2.5"
   }
 }

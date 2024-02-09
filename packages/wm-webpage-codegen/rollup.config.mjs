@@ -10,6 +10,7 @@ export default {
   output: {
     file: './dist/index.js',
     format: 'cjs',
+    inlineDynamicImports: true
   },
   plugins: [
 
