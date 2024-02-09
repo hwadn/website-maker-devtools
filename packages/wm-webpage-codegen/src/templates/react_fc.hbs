@@ -1,1 +1,16 @@
-Handlebars <b>{{doesWhat}}</b> precompiled!
+import React from 'react'
+{{#each imports}}
+import { Component as {{componentAlias_help}} } from '{{name}}'
+{{/each}}
+
+const Test: React.FC = () => (
+  <>
+  {{#each addedComponents}}
+    <div id='{{id}}'>
+      <{{componentAlias_help}} formValues={ {{{formValues_help}}} }/>
+    </div>
+  {{/each}}
+  </>
+)
+
+export default Test
