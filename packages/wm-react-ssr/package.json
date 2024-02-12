@@ -1,6 +1,6 @@
 {
   "name": "@chd1994/wm-react-ssr",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "SSR api for react projects",
   "keywords": [
     "ssr"
