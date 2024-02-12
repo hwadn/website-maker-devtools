@@ -21,7 +21,7 @@ export async function buildSSR({
   console.log('build client ok')
   await buildServer({ root: absoluteRoot, serverFile, outputDir })
   console.log('build server ok')
-  const distServerFile = path.resolve(process.cwd(), './test/dist/server.cjs')
+  const distServerFile = path.resolve(process.cwd(), root, './dist/server.cjs')
   console.log('distServerFile:', distServerFile)
   exec(`node ${distServerFile}`, (err, stdout, stderr) => {
     console.log('err:', err)
