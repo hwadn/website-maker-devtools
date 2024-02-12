@@ -1,0 +1,40 @@
+{
+  "name": "@chd1994/wm-react-ssr",
+  "version": "1.0.0",
+  "description": "SSR api for react projects",
+  "keywords": [
+    "ssr"
+  ],
+  "author": "IamHuadong <1761339618@qq.com>",
+  "homepage": "https://github.com/hwadn/website-maker-devtools#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "directories": {
+    "src": "src"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hwadn/website-maker-devtools.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "yarn build && node ./dist/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/hwadn/website-maker-devtools/issues"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.1.1"
+  }
+}
