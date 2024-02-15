@@ -1,0 +1,26 @@
+{
+  "name": "wm-developer-guide",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "IamHuadong <1761339618@qq.com>",
+  "homepage": "https://github.com/hwadn/website-maker-devtools#readme",
+  "license": "ISC",
+  "main": "lib/wm-developer-guide.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hwadn/website-maker-devtools.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/wm-developer-guide.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/hwadn/website-maker-devtools/issues"
+  }
+}
