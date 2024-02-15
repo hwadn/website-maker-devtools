@@ -49,7 +49,7 @@
 
 * 表与表关系
 
-
+![db-design](https://github.com/hwadn/website-maker-devtools/assets/43377087/ea63fc8c-2f35-43f0-8959-faa26e98fda2)
 
 #### （2）服务端
 
@@ -60,6 +60,8 @@
 * 平台接口文档
 
   <a href="https://106.53.61.189/api-v1/swagger" target="_blank">https://106.53.61.189/api-v1/swagger</a>
+
+  ![api-docs](https://github.com/hwadn/website-maker-devtools/assets/43377087/7758e3bb-a611-46a8-bcfa-1d5c2da38220)
 
 #### （3）前端——编辑器
 
