@@ -21,4 +21,4 @@
 
 ## 3. 平台架构设计
 
-
+![小蜜蜂平台架构](https://github.com/hwadn/website-maker-devtools/assets/43377087/621b04fc-3e38-40d0-a294-71b06f4f9295)
