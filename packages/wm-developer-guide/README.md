@@ -2,7 +2,7 @@
 
 ## 使用演示
 
-<video src="视频直链地址" width="宽度" height="高度" controls="controls"></video>
+<video src="https://github.com/hwadn/website-maker-devtools/blob/master/packages/wm-developer-guide/assets/%E4%BD%BF%E7%94%A8%E6%BC%94%E7%A4%BA.mp4" width="100%" controls="controls"></video>
 
 
 ## 开发者指南
