@@ -4,7 +4,8 @@
 
 * 平台地址
 
-  <https://106.53.61.189>{:target="_blank"}
+  <a href="https://106.53.61.189" target="_blank">https://106.53.61.189</a>
+
 
 * 视频演示
 
