@@ -8,7 +8,7 @@
 
 * 演示视频
 
-  https://github.com/hwadn/website-maker-devtools/assets/43377087/3484213a-2b33-4084-a82b-f45be74c598f
+  https://github.com/hwadn/website-maker-devtools/assets/43377087/5162813e-dc72-47c3-bada-cdf3cad9f2eb
 
 ## 2 组件开发
 
