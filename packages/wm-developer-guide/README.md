@@ -6,12 +6,11 @@
 
   <a href="https://106.53.61.189" target="_blank">https://106.53.61.189</a>
 
+* 演示视频
 
-* 视频演示
+  https://github.com/hwadn/website-maker-devtools/assets/43377087/3484213a-2b33-4084-a82b-f45be74c598f
 
-  https://github.com/hwadn/website-maker-devtools/assets/43377087/95b33ec7-693f-4333-9a5e-fe7ddd829b86
-
-## 2 组件开发教程
+## 2 组件开发
 
   运行以下组件脚手架命令，创建新的组件。（发包到`chd1994` scope可能会有权限问题，可联系开通）
 
