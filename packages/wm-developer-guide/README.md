@@ -10,6 +10,8 @@
 
   https://github.com/hwadn/website-maker-devtools/assets/43377087/5162813e-dc72-47c3-bada-cdf3cad9f2eb
 
+  `可访问外网的话加载速度会快一点`
+
 ## 2 组件开发
 
   运行以下组件脚手架命令，创建新的组件。（发包到`chd1994` scope可能会有权限问题，可联系开通）
